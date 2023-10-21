@@ -95,4 +95,13 @@ Expected Output:
 
 # Export data
 average_entries_by_gender.write.mode('overwrite').csv('/mnt/tokyoolympic/transformed-data/EntriesGenderDT')
+# Start by specifying the DataFrame that you want to write out.
+average_entries_by_gender.write \
 
+    # Use the 'mode' method to specify how the write operation should behave if data already exists 
+    # at the specified location. In this case, 'overwrite' mode means any existing data will be replaced.
+    .mode('overwrite') \
+
+    # Finally, specify the format ('csv') and location where the data should be written.
+    # The data will be written to the path '/mnt/tokyoolympic/transformed-data/EntriesGenderDT' in CSV format.
+    .csv('/mnt/tokyoolympic/transformed-data/EntriesGenderDT')
