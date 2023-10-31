@@ -50,3 +50,5 @@ print (teams)
 storage_download(cont, "transformed-data/athletesmedal/athletesmd_fd.csv", "athletesmd_fd.csv", overwrite = TRUE)
 athmedals = read.csv("athletesmd_fd.csv")
 print (athmedals)
+
+print
