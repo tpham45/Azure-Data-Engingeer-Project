@@ -51,4 +51,3 @@ storage_download(cont, "transformed-data/athletesmedal/athletesmd_fd.csv", "athl
 athmedals = read.csv("athletesmd_fd.csv")
 print (athmedals)
 
-print
