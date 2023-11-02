@@ -1,49 +1,66 @@
-Introduction
-* As a Data Engineer. My mission is giving the best dataset for furthure advanced analytics.
-* As a Data Scintiest. My mission is applying statistical skill to analyze data in advance and giving best prediction for decision-making.
+# Introduction
 
-Preview: This project is a combination between DE and DS workskill. I have applied framework bases on Azure for ETL methodology. Then using the dataset after cleaning and transforming, I have turned them into R for DS analyzing futhure.
+- **Data Engineer Role**: My objective is to curate the most accurate datasets for advanced analytics.
+- **Data Scientist Role**: I apply statistical methods to deeply analyze data, providing valuable predictions to inform decisions.
 
-Tool:
-* Azure Data Factory - Data Intergation 
-* Data Lake Gen 2 - Raw & Transformed Data Store
-* Azure Databricks - Data Transformations
-* Azure Synapse Analytics - Advanced Analytics
-* R Studio - DS Advanced Analytics
+## Overview
+This project amalgamates both Data Engineering and Data Scientist skill sets. I employed a framework based on Azure for ETL processes. Post the data cleaning and transformation, the data is passed to R for further advanced analysis.
 
-Framework:
-![Framework](./Picture/Framework.png)
-![Pipeline](./Picture/Pipeline.png)
+## Tools Used:
+- Azure Data Factory: For Data Integration
+- Data Lake Gen 2: Storage for Raw & Transformed Data
+- Azure Databricks: Data Transformations
+- Azure Synapse Analytics: Advanced Analytics
+- R Studio: Advanced Data Science Analysis
 
+## Framework:
+![Framework](./Picture/framework.png)
 
-Instruction:
-* Step 1: Data Set Up
-    - Download Dataset from Kaggle.
-    - Store data on Github Repos: 'https://github.com/tpham45/Data-Engineer-Project.git'.
+## Instructions:
 
-* Step 2: Data Extract into Azure Cloud
-    - Data Factory - Intergate raw data from data source (https://github.com/tpham45/Data-Engineer-Project/tree/Data-Source).
-    - Download raw data and import in Data Lake Gen 2.
+### Step 1: Data Set Up
+- Download the dataset from [Kaggle](https://www.kaggle.com/datasets/arjunprasadsarkhel/2021-olympics-in-tokyo/code).
+- Store the data on this [Github Repository](https://github.com/tpham45/Data-Engineer-Project.git).
 
-* Step 3: Data Transform by using Azure Databricks
-    - Set up environment to connect Azure Data Lake Gen 2 & Azure Databricks
-    - Code base for review (https://github.com/tpham45/Data-Engineer-Project/blob/develop/Code/Linkgen.py)
-    !!! Remeber - Loading "final data" back to Azure Data Lake Gen 2 on -> transformed-data folder.
+### Step 2: Extract Data into Azure Cloud
+- Use Data Factory to integrate raw data from the [data source](https://github.com/tpham45/Data-Engineer-Project/tree/Data-Source).
+- Download the raw data and import it into Data Lake Gen 2.
 
-/* You can choose to load data into any environment you prefer, be it Azure Synapse Analytics, R Studio, or others. */
+### Step 3: Data Transformation using Azure Databricks
+- Set up an environment to bridge Azure Data Lake Gen 2 with Azure Databricks.
+- Review the codebase [here](https://github.com/tpham45/Data-Engineer-Project/blob/develop/Code/Linkgen.py).
+- **Note**: Ensure the "final data" is loaded back into the Azure Data Lake Gen 2 under the `transformed-data` folder.
 
-* Step 4a: Data Loading by linking Azure Data Lake Gen 2 & R Studio
-    - Set Up Token, Endpoint Token.
-    - Connect to the 'tokyodatasources' container within the Azure Blob storage endpoint.
-    - Loading data into R studion & Analyzing.
-    - Code base for review (https://github.com/tpham45/Data-Engineer-Project/blob/develop/DataImport.R)
+> You have the flexibility to load data into any preferred environment, be it Azure Synapse Analytics, R Studio, or others.
 
-* Step 4b: Data Loading by linking Azure Data Lake Gen 2 & Azure Sysnapse Analytics
-    - Create a data pipeline on Azure Sysnapse Analytics
+### Step 4a: Load Data by Connecting Azure Data Lake Gen 2 & R Studio
+1. Establish Token and Endpoint Token.
+2. Connect to the 'tokyodatasources' container within the Azure Blob storage endpoint.
+3. Load the data into R Studio and proceed with analysis.
+4. Review the codebase [here](https://github.com/tpham45/Data-Engineer-Project/blob/develop/DataImport.R).
 
+### Step 4b: Load Data by Connecting Azure Data Lake Gen 2 & Azure Synapse Analytics
+> Note: I haven't primarily utilized Azure Data Synapse for this project. However, I'll provide a brief guide based on my knowledge.
 
+1. **Why use a Serverless SQL Pool?** 
+   ![Serverless Pool Benefits](./Picture/serveless.png)
+   - **Pay-per-Query**: Costs are based only on actual usage.
+   - **Direct Data Analysis**: Directly query large datasets.
+   - **Versatile Data Format Support**: Handles Parquet, CSV, JSON, etc.
+   - **Familiarity**: Employs T-SQL for querying.
+   - **Integrated with Azure Synapse Studio**: Aids in data exploration and visualization.
+   - **Security**: Incorporates Azure Active Directory authentication.
+   - **Use Case**: Best suited for ad-hoc data exploration and analytics.
 
-References:
-* Dataset: 'https://www.kaggle.com/datasets/arjunprasadsarkhel/2021-olympics-in-tokyo/code'
-* Instruction Video: 'https://www.youtube.com/watch?v=IaA9YNlg5hM' 
+2. Construct a Lake Database, given that the dataset resides on Azure Data Lake Gen 2.
+3. Create an external table from the Data Lake. You'll need to:
+   - Name the external table.
+   - Link services to your storage account.
+   - Specify the input file or folder.
+   - Define the source file format settings. Be attentive to headers.
+   - Configure General, Columns & Relationships based on your dataset.
+   - Finally, validate and publish your configurations.
 
+## References:
+- [Dataset Source](https://www.kaggle.com/datasets/arjunprasadsarkhel/2021-olympics-in-tokyo/code)
+- [Instructional Video](https://www.youtube.com/watch?v=IaA9YNlg5hM)
