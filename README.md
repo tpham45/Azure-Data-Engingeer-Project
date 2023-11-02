@@ -14,7 +14,7 @@ This project amalgamates both Data Engineering and Data Scientist skill sets. I 
 - R Studio: Advanced Data Science Analysis
 
 ## Framework:
-![Framework](./Picture/framework.png)
+![Framework](./Picture/Framework.png)
 
 ## Instructions:
 
