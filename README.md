@@ -12,7 +12,9 @@ Tool:
 * R Studio - DS Advanced Analytics
 
 Framework:
-![Alt text](Framework.png)
+![Framework](./Picture/Framework.png)
+![Pipeline](./Picture/Pipeline.png)
+
 
 Instruction:
 * Step 1: Data Set Up
