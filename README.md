@@ -28,7 +28,7 @@ This project amalgamates both Data Engineering and Data Scientist skill sets. I 
 
 ### Step 3: Data Transformation using Azure Databricks
 - Set up an environment to bridge Azure Data Lake Gen 2 with Azure Databricks.
-- Review the codebase [here](https://github.com/tpham45/Data-Engineer-Project/blob/develop/Code/Linkgen.py).
+- Review the codebase [here](https://github.com/tpham45/Data-Engineer-Project/blob/develop/Code/Transformation.py).
 - **Note**: Ensure the "final data" is loaded back into the Azure Data Lake Gen 2 under the `transformed-data` folder.
 
 > You have the flexibility to load data into any preferred environment, be it Azure Synapse Analytics, R Studio, or others.
@@ -37,13 +37,13 @@ This project amalgamates both Data Engineering and Data Scientist skill sets. I 
 1. Establish Token and Endpoint Token.
 2. Connect to the 'tokyodatasources' container within the Azure Blob storage endpoint.
 3. Load the data into R Studio and proceed with analysis.
-4. Review the codebase [here](https://github.com/tpham45/Data-Engineer-Project/blob/develop/DataImport.R).
+4. Review the codebase [here](https://github.com/tpham45/Data-Engineer-Project/blob/develop/Code/DataImport.R).
 
 ### Step 4b: Load Data by Connecting Azure Data Lake Gen 2 & Azure Synapse Analytics
 > Note: I haven't primarily utilized Azure Data Synapse for this project. However, I'll provide a brief guide based on my knowledge.
 
 1. **Why use a Serverless SQL Pool?** 
-   ![Serverless Pool Benefits](./Picture/serveless.png)
+   ![Serverless Pool Benefits](./Picture/serverless.png)
    - **Pay-per-Query**: Costs are based only on actual usage.
    - **Direct Data Analysis**: Directly query large datasets.
    - **Versatile Data Format Support**: Handles Parquet, CSV, JSON, etc.
