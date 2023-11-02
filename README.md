@@ -12,7 +12,7 @@ Tool:
 * R Studio - DS Advanced Analytics
 
 Framework:
-![Alt text](image.png)
+![Alt text](Framework.png)
 
 Instruction:
 * Step 1: Data Set Up
