@@ -28,7 +28,7 @@ This project amalgamates both Data Engineering and Data Scientist skill sets. I 
 
 ### Step 3: Data Transformation using Azure Databricks
 - Set up an environment to bridge Azure Data Lake Gen 2 with Azure Databricks.
-- Review the codebase [here](https://github.com/tpham45/Data-Engineer-Project/blob/develop/Code/Transformation.py).
+- Review the codebase [here](https://github.com/tpham45/Tokyo-Olympic-Analytics-DE-DS/blob/develop/Code/Transformation%20-%20Tokyo%20Olympic.ipynb).
 - **Note**: Ensure the "final data" is loaded back into the Azure Data Lake Gen 2 under the `transformed-data` folder.
 
 > You have the flexibility to load data into any preferred environment, be it Azure Synapse Analytics, R Studio, or others.
