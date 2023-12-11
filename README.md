@@ -23,12 +23,12 @@ This project amalgamates both Data Engineering and Data Scientist skill sets. I 
 - Store the data on this [Github Repository](https://github.com/tpham45/Data-Engineer-Project.git).
 
 ### Step 2: Extract Data into Azure Cloud
-- Use Data Factory to integrate raw data from the [data source](https://github.com/tpham45/Data-Engineer-Project/tree/Data-Source).
+- Use Data Factory to integrate raw data from the [data source](https://github.com/tpham45/Tokyo-Olympic-Analytics-DE-DS/tree/main/Data%20Source).
 - Download the raw data and import it into Data Lake Gen 2.
 
 ### Step 3: Data Transformation using Azure Databricks
 - Set up an environment to bridge Azure Data Lake Gen 2 with Azure Databricks.
-- Review the codebase [here](https://github.com/tpham45/Tokyo-Olympic-Analytics-DE-DS/blob/develop/Code/Transformation%20-%20Tokyo%20Olympic.ipynb).
+- Review the codebase [here](https://github.com/tpham45/Tokyo-Olympic-Analytics-DE-DS/blob/main/Code/Transformation%20-%20Tokyo%20Olympic.ipynb).
 - **Note**: Ensure the "final data" is loaded back into the Azure Data Lake Gen 2 under the `transformed-data` folder.
 
 > You have the flexibility to load data into any preferred environment, be it Azure Synapse Analytics, R Studio, or others.
@@ -37,7 +37,7 @@ This project amalgamates both Data Engineering and Data Scientist skill sets. I 
 1. Establish Token and Endpoint Token.
 2. Connect to the 'tokyodatasources' container within the Azure Blob storage endpoint.
 3. Load the data into R Studio and proceed with analysis.
-4. Review the codebase [here](https://github.com/tpham45/Data-Engineer-Project/blob/develop/Code/DataImport.R).
+4. Review the codebase [here](https://github.com/tpham45/Tokyo-Olympic-Analytics-DE-DS/blob/main/Code/DataImport.R).
 
 ### Step 4b: Load Data by Connecting Azure Data Lake Gen 2 & Azure Synapse Analytics
 > Note: I haven't primarily utilized Azure Data Synapse for this project. However, I'll provide a brief guide based on my knowledge.
